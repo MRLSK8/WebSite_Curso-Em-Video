@@ -1,0 +1,99 @@
+body {
+    background-color: #706b6b;
+    margin: 0 auto;
+}
+#interface {
+    width: 1000px;
+    background-color: white;
+    margin: -25px auto -100px auto;
+    box-shadow: 0px 0px 20px black;
+    padding: 10px;
+}
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+#imgQuadroHomemMulher {
+    box-shadow: 1px 1px 4px black;
+    border: 9px solid white;
+    transition: 1s;
+}
+.foto-legenda {
+    opacity: 0;
+    position: absolute;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 565px;
+    left: 140px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 593px;
+    height: 339px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.foto-legenda:hover {
+    opacity: 1;
+}
+.menu {
+    display: block;
+}
+.menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    left: 560px;
+}
+.menu li {
+    display: inline;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #dddddd;
+    padding: 8px;
+    margin: 2px;
+    transition: 0.8s;
+}
+.menu li:hover {
+    background-color: #606060;
+}
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+#cabecalho {
+    border-bottom: 1px solid #606060;
+    height: 150px;
+    background-image: url('../imagens/glass-logo-peq.jpg');
+    background-repeat: no-repeat;
+    background-position: 15px 87px;
+    margin-top: 0px;
+}
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1010px;
+    top: 83px;
+}
+#cabecalho h1 {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+#cabecalho h2 {
+    font-family: Arial, sans-serif;
+    color: #888888;
+    font-size: 20px;
+    padding: 0px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
