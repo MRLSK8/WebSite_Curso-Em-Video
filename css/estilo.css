@@ -62,7 +62,8 @@ a:hover {
     cursor: pointer;
     background-color: #dddddd;
     padding: 8px;
-    margin: 2px;
+    margin: 0px;
+    margin-left: 0px;
     transition: 0.8s;
 }
 .menu li:hover {

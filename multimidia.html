@@ -1,25 +1,52 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> WebSite Curso em vídeo </title>
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+</head>
+<body>
+    <div id="interface">
 
-[AQUI ENTRA UMA FOTO]
+        <header id="cabecalho">
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+            <img id="icone" src="./imagens/multimidia.png">
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+            <div class="menu">
+                <ul onmouseout="mudaFoto('./imagens/multimidia.png')">
+                    <li onmouseover="mudaFoto('./imagens/home.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('./imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('./imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('./imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('./imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </div>
+           
+        </header>
+
+        Glass > Multimídia
+        Sons e Vídeos
+        por Gustavo Guanabara
+        Atualizado em 01/Maio/2013
 
 
-Áudio e Vídeo
+        Áudio e Vídeo
 
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
+        [AQUI ENTRA UM VÍDEO]
+        [AQUI ENTRA UM ÁUDIO]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+        <footer id="rodape">
+            <p id="footerCopyright">
+                Copyright &copy; 2019 - by Marcelo Lima <br> 
+                <a href="https://www.facebook.com/profile.php?id=100004301021977" target="_blank">Facebook</a> |
+                <a href="https://twitter.com/MRLSK8" target="_blank">Twitter</a>
+            </p> 
+        </footer>
+    </div>
+
+    <script src="javascript/funcoes.js"></script>
+</body>
+</html>
