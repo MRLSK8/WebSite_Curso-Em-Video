@@ -1,6 +1,19 @@
 body {
+    font-family: Arial, sans-serif;
     background-color: #706b6b;
     margin: 0 auto;
+}
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+a {
+    color: #606060;
+    text-decoration: none;
+}
+a:hover {
+    font-size: 17px;
+    text-decoration: underline;
 }
 #interface {
     width: 1000px;
@@ -9,26 +22,23 @@ body {
     box-shadow: 0px 0px 20px black;
     padding: 10px;
 }
-p {
-    text-align: justify;
-    text-indent: 30px;
-}
 #imgQuadroHomemMulher {
     box-shadow: 1px 1px 4px black;
     border: 9px solid white;
     transition: 1s;
+    width: 520px;
 }
 .foto-legenda {
     opacity: 0;
     position: absolute;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    top: 565px;
-    left: 140px;
+    top: 532px;
+    left: 198px;
     background-color: rgba(0, 0, 0, .4);
     color: white;
-    width: 593px;
-    height: 339px;
+    width: 520px;
+    height: 294px;
     padding: 10px;
     box-sizing: border-box;
     transition: 0.5s;
@@ -90,10 +100,110 @@ header#cabecalho img#icone {
     margin-top: 40px;
 }
 #cabecalho h2 {
-    font-family: Arial, sans-serif;
+    font-family: 'Merienda', cursive;
     color: #888888;
     font-size: 20px;
     padding: 0px;
     padding-left: 20px;
+    margin-top: 5px;
+}
+section#corpo {
+    display: block;
+    width: 535px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding: 15px;
+}
+article#noticia-principal h2{
+    font-size: 17px;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+}
+header#cabecalho-artigo h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.direita {
+    text-align: right;
+}
+header#cabecalho-artigo h2 {
+    font-size: 15px;
+    color: #aca5a5;
+    background-color: white;
+    margin: 0px;
+    padding-left: 0px;
+}
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color: #606060;
+}
+#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+}
+#tabelaspec td.colDireita {
+    color: white;
+    vertical-align: top;
+    background-color: #606060;
+    font-weight: bold;
+}
+#tabelaspec td.colEsquerda {
+    background-color: #cecece;
+}
+#tabelaspec caption {
+    color: #888888;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#tabelaspec caption span {
+    float: right;
+    color: black;
+    font-size: 10px;
     margin-top: 10px;
+}
+aside#lateral {
+    display: block;
+    width: 380px;
+    float: right;
+    padding-right: 10px;
+    background-color: #dddddd;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    margin-top: 100px;
+    margin: 10px;
+}
+aside#lateral h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    margin-top: 1px;
+    color: #606060;
+}
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13px;
+    color: white;
+    padding: 5px 0px 5px 10px;
+}
+#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+#rodape p {
+    text-align: center;
+    margin-bottom: 0px;
+}
+#footerCopyright {
+    margin-top: 18px;
 }
