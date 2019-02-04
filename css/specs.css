@@ -1,0 +1,11 @@
+section #conteudo {
+    width: 1000px;
+    margin: auto;
+}
+section #frame-spec {
+    width: 470px;
+    height: 285px;
+    border: none;
+    overflow: hidden;
+}
+
