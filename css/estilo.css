@@ -184,6 +184,9 @@ aside#lateral {
     margin-top: 100px;
     margin: 10px;
 }
+aside video#filme {
+    width: 380px;
+}
 aside#lateral h1 {
     font-family: 'Merienda', cursive;
     font-size: 20px;
@@ -207,4 +210,7 @@ aside#lateral h2 {
 }
 #footerCopyright {
     margin-top: 18px;
+}
+article video#filme {
+    width: 535px;
 }
