@@ -36,10 +36,10 @@
                     <h3 class="direita">Atualizado em 5/Fevereiro/2019</h3>
                 </header>
 
-                <form action="">
+                <form method="POST" id="fContato" action="mailto:marcelo_sp5@hotmail.com" oninput="calc_total();">
                     <fieldset id="usuario">
                         <legend>Identificação do Usuário</legend>
-                        <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="25" maxlength="30" placeholder="Nome Completo"></p>
+                        <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="26" maxlength="30" placeholder="Nome Completo"></p>
                         <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="25" maxlength="30" placeholder="Senha"></p>
                         <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="25" maxlength="30" placeholder="E-mail"></p>
                         <fieldset id="sexo">
@@ -53,24 +53,80 @@
                         <legend>Endereço do Usuário</legend>
                         <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="25" maxlength="50" placeholder="Rua, Av, Trav, ..."></p>
                         <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="9999" placeholder="Nº Casa"></p>
-                        <p><label for="">Estado:</label></p>
-                        <p><label for="">Cidade:</label></p> 
+                        <p><label for="cEst">Estado:</label> <select name="tEst" id="cEst">
+                            <optgroup label="A">
+                                <option>Acre</option>
+                                <option>Alagoas</option>
+                                <option>Amapá</option>
+                                <option>Amazonas</option>
+                            </optgroup>
+                            <optgroup label="B">
+                                <option>Bahia</option>
+                            </optgroup>
+                            <optgroup label="C">
+                                <option>Ceará</option>
+                            </optgroup>
+                            <optgroup label="D">
+                                <option>Distrito Federal</option>
+                            </optgroup>
+                            <optgroup label="E">
+                                <option>Espírito Santo</option>
+                            </optgroup>
+                            <optgroup label="G">
+                                <option>Goiás</option>
+                            </optgroup>
+                            <optgroup label="M">
+                                <option>Maranhão</option>
+                                <option>Mato Grosso</option>
+                                <option>Mato Grosso do Sul</option>
+                                <option>Minas Gerais</option>
+                            </optgroup>
+                            <optgroup label="P">
+                                <option>Pará</option>
+                                <option>Paraíba</option>
+                                <option>Paraná</option>
+                                <option>Pernambuco</option>
+                                <option>Piauí</option>
+                            </optgroup>
+                            <optgroup label="R">
+                                <option>Rio de Janeiro</option>
+                                <option>Rio Grande do Norte</option>
+                                <option>Rio Grande do Sul</option>
+                                <option>Rondônia</option>
+                                <option>Roraima</option>
+                            </optgroup>
+                            <optgroup label="S">
+                                <option>Santa Catarina</option>
+                                <option>São Paulo</option>
+                                <option>Sergipe</option>
+                            </optgroup>
+                            <optgroup label="T">
+                                <option>Tocantins</option>
+                            </optgroup>
+                        </select> </p>
+                        <p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"></p> 
+                        <datalist id="cidades">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguaçu"></option>
+                            <option value="Niterói"></option>
+                            <option value="Belford Roxo"></option>
+                        </datalist>
                     </fieldset>
                     <fieldset id="mensagem">
                         <legend>Mensagem do Usuário</legend>
-                        Grau de Urgência:
-                        Mensagem:
+                        <p><label for="cUrg">Grau de Urgência:</label> Mín <input type="range" name="tUrg" id="cUrg" min="0" max="10"> Máx</p>
+                        <p><label for="cMsg">Mensagem:<br></label> <textarea style="resize: none" name="tMsg" id="cMsg" cols="45" rows="10" placeholder="Deixe aqui sua mensagem"></textarea></p>
                     </fieldset>
                     <fieldset id="pedido">
                         <legend>Quero um Google Glass</legend>
-                        Gostaria de adquirir um Google Glass quando disponível
-                        Cor:
-                        Quantidade:
-                        Preço Total: R$
+                        <p><input type="checkbox" name="tPed" id="cPed" checked><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                        <p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor"></p>
+                        <p><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"> </p>
+                        <p><label for="cTot">Preço Total: R$</label><input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly> </p> 
                     </fieldset>
 
-                [BOTÃO ENVIAR]
-                 </form>
+                    <input type="image" name="tEnviar" id="cEnviar" src="./imagens/botao-enviar.png">
+                </form>
 
             </article>
         </section>
